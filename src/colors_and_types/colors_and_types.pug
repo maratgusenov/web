@@ -3,9 +3,10 @@ html(lang='en')
   head
     meta(charset="UTF-8")
     title Colors&Types
+    link(rel="stylesheet" href="colors_and_types.scss")
   body.container
     .wrapper
-      .type
+      .card
         .card__color
           .card__box_dark-shade-100
           .card__discription
@@ -41,16 +42,16 @@ html(lang='en')
           .card__discription
             .card__name Green
             .card__code #6FCF97
-      .type
-        .card__text
-          .card__tag.card__tag_size-h1 h1
-          .card__task.card__task_size-h1 This one is the sub-section or widget title
-        .card__text
-          .card__tag.card__tag_size-h2 h2
-          .card__task.card__task_size-h2 Next one is the item title inside widgets
-        .card__text
-          .card__tag.card__tag_size-h3 h3
-          .card__task.card__task_size-h3 This is a label or CTA text
-        .card__text
-          .card__tag.card__tag_size-body body
-          .card__task.card__task_normal.card__task_size-body This is the body text which is used for most of the design, like paragraphs, lists, etc.         
+      .card
+        .card__text.card__text_size_h1
+          .card__tag h1
+          .card__task This one is the sub-section or widget title
+        .card__text.card__text_size_h2
+          .card__tag h2
+          .card__task Next one is the item title inside widgets
+        .card__text.card__text_size_h3
+          .card__tag h3
+          .card__task This is a label or CTA text
+        .card__text.card__text_size_body
+          .card__tag body
+          .card__task.card__task_weight This is the body text which is used for most of the design, like paragraphs, lists, etc.         
